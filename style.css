@@ -12,10 +12,24 @@ header {
   background-attachment: fixed;
 }
 
+/* Navbar */
 nav {
   position: fixed;
   width: 100%;
-  line-height: 25px;
+  transition: 0.75s;
+}
+
+nav ul {
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black  {
+  background: #000;
+  width: 100%;
 }
 
 .navbar-header {
@@ -25,8 +39,6 @@ nav {
   letter-spacing: 1px;
 }
 
-
-
 .navbar-nav li {
   padding-right: 10px;
 }
@@ -35,10 +47,7 @@ nav {
   font-size: 1.1em !important;
 }
 
-
-
-
-
+/* Hello World */
 .hello {
   position: absolute;
   width: 100%;
@@ -62,13 +71,11 @@ h3 br {
   display: none;
 }
 
-
-
 hr {
   width: 75%;
 }
 
-
+/* Contact */
 #contact h3 {
   padding-bottom: 25px;
 }
@@ -102,6 +109,7 @@ hr {
   color: #d5d5d5;
 }
 
+/* Responsive */
 @media (min-width: 1200px) {
   .social a {
     font-size: 5em;
@@ -145,6 +153,11 @@ hr {
   h3 br {
     display:inline;
   }
+
+  /*nav {
+    background: #000;
+    width: 100%;
+  }*/
 }
 
 /*
