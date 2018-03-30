@@ -48,19 +48,17 @@ nav {
 
 .hello h1 {
   color: #fff;
-  font-size: 60px; /* 82.7 */
+  font-size: 80px;
   font-weight: 500;
 }
 
 .hello h3 {
   color: #fff;
-  padding-top: 15px; /* 35 */
-  font-size: 30px;
+  padding-top: 15px;
+  font-size: 34.6px;
 }
 
-h3 br {
-  display: none;
-}
+
 
 
 
@@ -129,22 +127,6 @@ hr {
     padding: .7rem;
   }
 
-  .hello h1 {
-    color: #fff;
-    font-size: 60px;
-    font-weight: 500;
-  }
-
-  .hello h3 {
-    color: #fff;
-    padding-top: 15px;
-    font-size: 30px;
-    content: 'TESTING';
-  }
-
-  h3 br {
-    display:inline;
-  }
 }
 
 /*
