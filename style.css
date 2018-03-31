@@ -27,7 +27,7 @@ nav ul {
   transition: 1s;
 }
 
-nav.black  {
+nav.black {
   background: #000;
   width: 100%;
 }
@@ -71,8 +71,37 @@ h3 br {
   display: none;
 }
 
+#cursor {
+  font-size: 35px;
+}
+
+
+/* Misc */
 hr {
-  width: 75%;
+  width: 50%;
+}
+
+.padding {
+  padding: 20px;
+}
+
+
+#about img {
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circular--square {
+  border-radius: 50%;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #d5d5d5;
+  text-align: center;
 }
 
 /* Contact */
@@ -129,6 +158,11 @@ hr {
     font-size: 2.5em;
     padding: 1.2rem;
   }
+
+  nav {
+    background: #000;
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -154,10 +188,15 @@ hr {
     display:inline;
   }
 
+  nav {
+    background: #000;
+    width: 100%;
+  }
+
   /*nav {
     background: #000;
     width: 100%;
-  }*/
+  }
 }
 
 /*
