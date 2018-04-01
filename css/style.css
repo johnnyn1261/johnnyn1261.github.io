@@ -39,7 +39,7 @@ nav.black {
 }
 
 .nav-link {
-  font-size: 1.1em !important;
+  font-size: 1.2em !important;
 }
 
 /* Hello World */
@@ -79,8 +79,12 @@ hr {
   padding: 20px;
 }
 
+#cards .padding-top {
+  padding-top: 15px;
+}
+
 .padding-top {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .center {
@@ -104,7 +108,7 @@ hr {
 
 /* Contact */
 #contact h3 {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .social a {
@@ -142,6 +146,11 @@ hr {
     font-size: 5em;
     padding: 4rem;
   }
+
+  #cards {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -153,7 +162,7 @@ hr {
 
 @media (max-width: 768px) {
   .social a {
-    font-size: 2.5em;
+    font-size: 3em;
     padding: 1.2rem;
   }
 
@@ -198,7 +207,7 @@ hr {
   #cards br {
     display: none;
   }
-  
+
   /*nav {
     background: #000;
     width: 100%;
