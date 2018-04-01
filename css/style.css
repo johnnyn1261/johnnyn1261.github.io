@@ -111,8 +111,12 @@ hr {
   padding-bottom: 20px;
 }
 
+#contact br {
+  display: none;
+}
+
 .social a {
-  font-size: 4.5em;
+  font-size: 5em;
   padding: 3rem;
 }
 
@@ -143,7 +147,7 @@ hr {
 /* Responsive */
 @media (min-width: 1200px) {
   .social a {
-    font-size: 5em;
+    font-size: 6em;
     padding: 4rem;
   }
 
@@ -154,16 +158,15 @@ hr {
 }
 
 @media (max-width: 992px) {
-  .social a {
-    font-size: 4em;
-    padding: 2rem;
+  #contact br {
+    display: inline;
   }
 }
 
 @media (max-width: 768px) {
   .social a {
-    font-size: 3em;
-    padding: 1.2rem;
+    font-size: 5em;
+    padding: 2rem;
   }
 
   nav {
@@ -174,12 +177,16 @@ hr {
   #cards br {
     display: none;
   }
+
+  #contact br {
+    display: inline;
+  }
 }
 
 @media (max-width: 576px) {
   .social a {
-    font-size: 2.5em;
-    padding: .7rem;
+    font-size: 3.4em;
+    padding: 1rem;
   }
 
   .hello h1 {
@@ -206,6 +213,10 @@ hr {
 
   #cards br {
     display: none;
+  }
+
+  #contact br {
+    display: inline;
   }
 
   /*nav {

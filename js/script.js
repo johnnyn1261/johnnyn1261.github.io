@@ -2,6 +2,7 @@
 $(document).ready(function() {
     setInterval ('cursorAnimation()', 800);
     $(document).on("scroll", onScroll);
+    $(".owl-carousel").owlCarousel();
 
     //Scroll annimation
     $('a[href^="#"]').on('click',function(e) {
@@ -13,6 +14,25 @@ $(document).ready(function() {
         }, 500,'swing');
     });
 });
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  stagePadding: 50,
+  //nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+
+})
 
 function cursorAnimation() {
   $('#cursor').animate({
