@@ -11,7 +11,7 @@ header {
 nav {
   position: fixed;
   width: 100%;
-  transition: 0.75s;
+  transition: 1s;
 }
 
 nav ul {
@@ -30,12 +30,12 @@ nav.black {
 .navbar-header {
   color: #fff;
   font-weight: bold;
-  font-size: 20px;
+  font-size: .1px;
   letter-spacing: 1px;
 }
 
-.navbar-nav li {
-  padding-right: 10px;
+header .navbar-brand {
+  font-size: 20px;
 }
 
 .nav-link {
@@ -144,6 +144,11 @@ hr {
   color: #d5d5d5;
 }
 
+.owl-carousel {
+  padding-bottom: 120px;
+  padding-top: 20px
+}
+
 /* Responsive */
 @media (min-width: 1200px) {
   .social a {
@@ -184,9 +189,13 @@ hr {
 }
 
 @media (max-width: 576px) {
+  header .navbar-brand {
+    font-size: 18px;
+  }
+
   .social a {
-    font-size: 3.4em;
-    padding: 1rem;
+    font-size: 3.56em;
+    padding: .44rem;
   }
 
   .hello h1 {

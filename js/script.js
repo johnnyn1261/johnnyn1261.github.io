@@ -19,19 +19,20 @@ $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
   stagePadding: 50,
-  //nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      1000:{
+        items:3
+      }
+  }
 })
 
 function cursorAnimation() {
@@ -71,6 +72,15 @@ $(window).on("scroll", function() {
   }
 })
 
+var typed = new Typed(".type", {
+  strings: [
+    "Van-Nhan Nguyen^5000", " ^150", "John Nguyen^5000", " ^150"
+  ],
+  typeSpeed: 80,
+  backSpeed: 100,
+  loop: true,
+  showCursor: false
+});
 /*
 // Menu-toggle automatically sets black background
 $(document).ready(function() {
