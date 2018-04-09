@@ -5,6 +5,7 @@ header {
   background: url(../img/temp.jpg) no-repeat 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: 0px 5px 50px #d5d5d5;
 }
 
 /* Navbar */
@@ -70,32 +71,8 @@ h3 br {
   font-size: 35px;
 }
 
-/* Misc */
-hr {
-  width: 50%;
-}
-
-.padding {
-  padding: 20px;
-}
-
-#cards .padding-top {
-  padding-top: 15px;
-}
-
-.padding-top {
-  padding-top: 30px;
-}
-
-.center {
-  margin: auto;
-  width: 50%;
-  border: 1px solid #d5d5d5;
-  text-align: center;
-}
-
 /* About */
-#about img {
+#about .profile {
   padding: 20px;
   display: block;
   margin-left: auto;
@@ -104,6 +81,47 @@ hr {
 
 .circular--square {
   border-radius: 50%;
+}
+
+.descript {
+  transform: translateY(20%);
+  align-items: center;
+  text-align: center;
+}
+
+.d0 {
+  text-align: left;
+}
+
+.d1 {
+  text-align: right;
+}
+
+.d2 {
+  display: none;
+}
+
+.umd {
+  transform: translateX(25px);
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mc {
+  transform: translateX(-25px);
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descript {
+  transform: translateY(45px);
+}
+
+/* Experiences/Cards */
+#cards .card {
+  box-shadow: 5px 5px 10px #d5d5d5;
 }
 
 /* Contact */
@@ -144,10 +162,44 @@ hr {
   color: #d5d5d5;
 }
 
+/* Owl Carousel */
 .owl-carousel {
   padding-bottom: 120px;
   padding-top: 20px
 }
+
+.owl-carousel img {
+  box-shadow: 5px 5px 10px #d5d5d5;
+}
+
+/* Misc */
+hr {
+  width: 50%;
+}
+
+.padding {
+  padding: 20px;
+}
+
+#cards .padding-top {
+  padding-top: 15px;
+}
+
+.padding-top {
+  padding-top: 30px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 1px solid #d5d5d5;
+  text-align: center;
+  box-shadow: 5px 5px 10px #d5d5d5;
+}
+
+
+
+
 
 /* Responsive */
 @media (min-width: 1200px) {
@@ -186,11 +238,41 @@ hr {
   #contact br {
     display: inline;
   }
+
+  .d0 {
+    text-align: center;
+  }
+
+  .d1 {
+    display: none;
+  }
+
+  .d2 {
+    display: inline;
+  }
+
+  .umd {
+    transform: translateX(0px);
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mc {
+    transform: translateX(0px);
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .descript {
+    transform: translateY(10px);
+  }
 }
 
 @media (max-width: 576px) {
   header .navbar-brand {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .social a {
@@ -208,7 +290,6 @@ hr {
     color: #fff;
     padding-top: 15px;
     font-size: 30px;
-    content: 'TESTING';
   }
 
   h3 br {
