@@ -15,6 +15,11 @@ $(document).ready(function() {
     });
 });
 
+function play(){
+  var audio = document.getElementById("easter-egg");
+  audio.play();
+}
+
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
