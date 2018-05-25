@@ -168,12 +168,12 @@ h3 br {
 }
 
 /* Experiences/Cards */
-#cards .card {
+#cards .card, #vert-cards .card, #hori-cards .card {
   transition: .3s;
   box-shadow: 1px 1px 10px #d5d5d5;
 }
 
-#cards .card:hover {
+#cards .card:hover, #vert-cards .card:hover, #hori-cards .card:hover {
   transition: .3s;
   transform: translateY(-10px);
   box-shadow: 5px 5px 10px #d5d5d5;
@@ -209,6 +209,21 @@ figure {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
+}
+
+/* Projects */
+#projects a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+#vert-cards {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#hori-cards {
+  display: none;
 }
 
 /* Contact */
@@ -334,6 +349,11 @@ hr {
   #contact br {
     display: inline;
   }
+
+  #vert-cards {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -383,6 +403,14 @@ hr {
 
   .descript {
     transform: translateY(10px);
+  }
+
+  #vert-cards {
+    display: none;
+  }
+
+  #hori-cards {
+    display: inline;
   }
 }
 

@@ -25,7 +25,8 @@ function play(){
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
-  stagePadding: 50,
+  autoHeight: false,
+  stagePadding:25,
   autoplay:true,
   autoplayTimeout:5000,
   autoplayHoverPause:true,
@@ -36,13 +37,10 @@ $('.owl-carousel').owlCarousel({
       600:{
         items:2
       },
-      760:{
-        items:2
-      },
-      992:{
+      900:{
         items:3
       },
-      1200:{
+      1300:{
         items:4
       }
   }
