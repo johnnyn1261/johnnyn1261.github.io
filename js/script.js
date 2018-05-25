@@ -15,6 +15,8 @@ $(document).ready(function() {
     });
 });
 
+new WOW().init();
+
 function play(){
   var audio = document.getElementById("easter-egg");
   audio.play();
@@ -46,14 +48,6 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
-function cursorAnimation() {
-  $('#cursor').animate({
-      opacity: 0
-  }, 'fast', 'swing').animate({
-      opacity: 1
-  }, 'fast', 'swing');
-}
-
 $('.nav.navbar-nav > li').on('click', function(e) {
     $('.nav.navbar-nav > li').removeClass('active');
     $(this).addClass('active');
@@ -83,6 +77,7 @@ $(window).on("scroll", function() {
   }
 })
 
+// Typed effect
 var typed = new Typed(".type", {
   strings: [
     "Van-Nhan Nguyen^5000", " ^150", "John Nguyen^5000", " ^150"
@@ -92,27 +87,12 @@ var typed = new Typed(".type", {
   loop: true,
   showCursor: false
 });
-/*
-// Menu-toggle automatically sets black background
-$(document).ready(function() {
-  $(".navbar-toggler").on("click", function() {
 
-    if ( $('#navbar').is(':visible') ) {
-			$(this).removeClass('active');
-		} else {
-			$(this).addClass('active');
-		}
-
-    $('nav').addClass('black');
-  });
-});
-
-// collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
-*/
+//Cursor animation
+function cursorAnimation() {
+  $('#cursor').animate({
+      opacity: 0
+  }, 'fast', 'swing').animate({
+      opacity: 1
+  }, 'fast', 'swing');
+}
