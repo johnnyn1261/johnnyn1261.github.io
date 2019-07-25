@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     setInterval ('cursorAnimation()', 800);
     $(document).on("scroll", onScroll);
@@ -9,9 +8,12 @@ $(document).ready(function() {
         e.preventDefault();
         var target = this.hash;
         var $target = $(target);
-        $('html, body').animate({
-          'scrollTop': $target.offset().top
-        }, 500,'swing');
+        // console.log($target.offset() != null);
+        if ($target.offset() != null) {
+          $('html, body').animate({
+            'scrollTop': $target.offset().top
+          }, 500,'swing');
+        }
     });
 });
 
@@ -19,7 +21,13 @@ new WOW().init();
 
 function play(){
   var audio = document.getElementById("easter-egg");
-  audio.play();
+
+  if (audio.duration > 0 && !audio.paused) {
+    audio.pause();
+    audio.load();
+  } else {
+    audio.play();
+  }
 }
 
 $('.owl-carousel').owlCarousel({
@@ -67,13 +75,21 @@ function onScroll(event){
 }
 
 // Scrolling effect
-$(window).on("scroll", function() {
-  if($(window).scrollTop() > 20) {
+$(document).ready(function() {
+  if($(window).scrollTop() > 1) {
     $('nav').addClass('black');
   } else {
     $('nav').removeClass('black');
   }
-})
+});
+
+$(window).on("scroll", function() {
+  if($(window).scrollTop() > 1) {
+    $('nav').addClass('black');
+  } else {
+    $('nav').removeClass('black');
+  }
+});
 
 // Typed effect
 var typed = new Typed(".type", {
@@ -88,7 +104,7 @@ var typed = new Typed(".type", {
 
 //Cursor animation
 function cursorAnimation() {
-  $('#cursor').animate({
+  $('.cursor').animate({
       opacity: 0
   }, 'fast', 'swing').animate({
       opacity: 1
